@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Threading;
 
 namespace ProblematicProblem
-
 {
     class Program
     {
@@ -19,10 +18,11 @@ namespace ProblematicProblem
                 "Hello, welcome to the random activity generator! \nWould you like to generate a random activity? yes/no: ");
             string contIn = Console.ReadLine().ToLower();
             cont = contIn == "yes";
+
             Console.WriteLine();
             Console.Write("We are going to need your information first! What is your name? ");
             string userName = Console.ReadLine();
-            
+
             Console.WriteLine();
             Console.Write("What is your age? ");
             int userAge;
@@ -63,7 +63,7 @@ namespace ProblematicProblem
                     }
 
                     Console.WriteLine();
-                    Console.WriteLine("Would you like to add more? yes/no: ");
+                    Console.Write("Would you like to add more? yes/no: ");
                     addToListInput = Console.ReadLine().ToLower();
                     addToList = addToListInput == "yes";
                 }
